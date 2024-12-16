@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f3f4f6; /* Soft light gray */
+    color: #333; /* Darker text for better readability */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #4A90E2; /* Vibrant blue for headings */
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555; /* Neutral text color */
+}
+
+input, select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #4A90E2; /* Highlighted border on focus */
+    background-color: #fff;
+    outline: none;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #4A90E2; /* Primary button color */
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #357ABD; /* Slightly darker blue on hover */
+}
+
+#result {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 6px;
+    display: none;
+    font-size: 16px;
+}
+
+.success {
+    background-color: #E3FCEC; /* Light green background */
+    border: 1px solid #C3E6CB; /* Border matching the success theme */
+    color: #155724; /* Green text for success message */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input, select, button {
+        font-size: 14px;
+    }
+
+    #result {
+        font-size: 14px;
+    }
+}
